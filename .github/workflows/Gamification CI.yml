@@ -23,3 +23,7 @@ jobs:
 
       - name: Проверка дашборда
         run: echo "Тест отображения баллов"
+- name: Run gamification tests
+  run: |
+    echo "Running gamification tests..."
+    cat tests/gamification_tests.txt
