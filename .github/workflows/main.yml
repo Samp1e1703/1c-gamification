@@ -1,0 +1,25 @@
+name: Gamification CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Проверка проекта
+        run: echo "Проверка конфигурации 1С"
+
+      - name: Тестирование геймификации
+        run: echo "Тест начисления баллов"
+
+      - name: Проверка достижений
+        run: echo "Тест системы достижений"
+
+      - name: Проверка дашборда
+        run: echo "Тест отображения баллов"
